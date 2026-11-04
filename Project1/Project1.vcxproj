@@ -140,6 +140,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EnumFunctions.cpp" />
     <ClCompile Include="Evil.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NPC.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="Wizard.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EnumClasses.h" />
     <ClInclude Include="Evil.h" />
     <ClInclude Include="NPC.h" />
     <ClInclude Include="Paladin.h" />
@@ -156,6 +158,9 @@
     <ClInclude Include="Structures.h" />
     <ClInclude Include="Warrior.h" />
     <ClInclude Include="Wizard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnumFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

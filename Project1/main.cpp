@@ -4,6 +4,8 @@
 #include "Warrior.h"
 #include "Wizard.h"
 #include "Paladin.h"
+#include "EnumClasses.h"
+#include "EnumFunctions.h"
 
 using namespace std;
 
@@ -36,4 +38,15 @@ int main()
     TakeDamage(player.GetCharacter(), 5);
 
     return 0;
+    short type;
+    short choiceweapon = 0;
+
+    cout << "=== Выбор игрового персонажа ===\n";
+    cout << "1 - Воин\n 2 - Маг\n 3 - Паладин\n 4 - Демон";
+    cout << "Выберите номер игрового персонажа: ";
+    cin >> type;
+    void CharacterTypeInfo(CharacterType type);
+    if (type < 1 or type > 4) {
+        cout << "Выбран недоступный номер персонажа";
+    }
 }
